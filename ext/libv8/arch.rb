@@ -25,7 +25,7 @@ module Libv8
       if rubinius?
         x86_64_from_build_cpu || x86_64_from_arch_flag
       else
-        x86_64_from_byte_length
+        x86_64_from_build_cpu || x86_64_from_byte_length
       end
     end
 
